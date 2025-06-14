@@ -24,12 +24,7 @@
 
 ## 🧩 전체 파이프라인 워크플로우
 
-```mermaid
-graph LR
-A[썸네일 수집 (YouTube/Playboard)] --> B[Azure 예측 → COCO 변환]
-B --> C[Label Studio 자동 실행 → 사용자 검수/수정]
-C --> D[COCO → Azure 업로드]
-D --> E[모델 재학습 및 퍼블리시]
+![파이프라인 흐름](workflow.png)
 ```
 
 ---

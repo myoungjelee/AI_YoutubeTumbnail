@@ -15,9 +15,8 @@ saved_urls.txt
 terms.html
 
 # 썸네일 이미지 및 학습데이터
-*.jpg
-*.png
 *.json
+*.pdf
 
 # Jupyter/임시
 *.ipynb_checkpoints
@@ -30,3 +29,7 @@ terms.html
 # IDE 설정
 .vscode/
 .idea/
+
+# data 폴더는 포함하되, 그 안의 파일은 무시
+data/**/*
+!data/**/
