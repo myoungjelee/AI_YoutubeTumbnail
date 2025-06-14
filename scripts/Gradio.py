@@ -223,7 +223,7 @@ def draw_comparison_results(
 
         # 텍스트 위치 모델에 따라 다르게
         text_xy = (
-            (left + 5, top + 5) if model_type == "조회수" else (left + 5, bottom - 25)
+            (left + 10, top + 5) if model_type == "조회수" else (left + 10, bottom - 35)
         )
 
         draw.rectangle([left, top, right, bottom], outline=color, width=7)
