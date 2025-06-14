@@ -1,0 +1,9 @@
+gradio
+requests
+pillow
+matplotlib
+pandas
+numpy
+python-dotenv
+selenium
+tabulate

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 환경설정
+.env
+*.pid
+
+# 자동 생성 결과 및 민감 파일
+azure_to_labelstudio.json
+result.json
+saved_urls.txt
+terms.html
+
+# 썸네일 이미지 및 학습데이터
+*.jpg
+*.png
+*.json
+
+# Jupyter/임시
+*.ipynb_checkpoints
+*.tmp
+*.log
+
+# 시스템 파일
+.DS_Store
+
+# IDE 설정
+.vscode/
+.idea/
