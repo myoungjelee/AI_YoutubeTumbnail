@@ -31,7 +31,7 @@ load_dotenv()
 # ⚙️ 설정값(변경해야할 값)
 # =========================
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-IMAGE_FOLDER = os.path.join(BASE_DIR, "data", "Youtube_Tranding", "thumbnails2")
+IMAGE_FOLDER = os.path.join(BASE_DIR, "data", "Youtube_Trending", "2025-06-15_09-01-07")
 
 LABEL_INFO = {
     "브랜드/로고": {"id": 1, "threshold": 0.9},

@@ -17,6 +17,7 @@ terms.html
 # 썸네일 이미지 및 학습데이터
 *.json
 *.pdf
+*.csv
 
 # Jupyter/임시
 *.ipynb_checkpoints
