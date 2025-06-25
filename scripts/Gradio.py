@@ -95,7 +95,7 @@ def predict_with_model(image, model_config):
 
 
 def calculate_similarity_score(predictions):
-    weights = {"인물": 1.2, "텍스트": 1.1, "브랜드로고": 1.0, "캐릭터": 0.9}
+    weights = {"인물": 1.2, "텍스트": 1.1, "브랜드/로고": 1.0, "캐릭터": 0.9}
     weighted_score = 0
     total_weight = 0
     for pred in predictions["predictions"]:
@@ -152,14 +152,12 @@ def analyze_thumbnail(image, analysis_type, threshold):
 
     result_text = f"""
 🎯 **썸네일 분석 결과**
-result_text = ""  # 점수 출력 라인 제거
 
-📊 **조회수 예측 모델**: {viewcount_score:.1f}%  
+📊 **조회수 예측 모델**: {viewcount_score:.1f}%
 🔥 **트렌드 분석 모델**: {trending_score:.1f}%
 
 📈 **종합 점수**: {(viewcount_score + trending_score) / 2:.1f}%
 """
-    result_text = ""
     detailed_analysis = create_detailed_analysis(viewcount_result, trending_result)
     recommendations = generate_recommendations(
         viewcount_score, trending_score, viewcount_result
