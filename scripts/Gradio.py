@@ -95,7 +95,7 @@ def predict_with_model(image, model_config):
 
 
 def calculate_similarity_score(predictions):
-    weights = {"인물": 1.2, "텍스트": 1.1, "브랜드로고": 1.0, "캐릭터": 0.9}
+    weights = {"인물": 1.2, "텍스트": 1.1, "브랜드/로고": 1.0, "캐릭터": 0.9}
     weighted_score = 0
     total_weight = 0
     for pred in predictions["predictions"]:
